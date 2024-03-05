@@ -8,6 +8,7 @@ function createCard(cardContent, deleteFunction) {
   const itemCard = templateCard.querySelector(".places__item").cloneNode(true);
 
   itemCard.querySelector(".card__image").src = cardContent.link;
+  itemCard.querySelector(".card__image").alt = cardContent.alt;
   itemCard.querySelector(".card__title").textContent = cardContent.name;
 
   const deleteButton = itemCard.querySelector(".card__delete-button");
