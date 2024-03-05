@@ -22,7 +22,7 @@ function deleteCard(evt) {
   evt.target.closest(".places__item").remove();
 }
 
-// Выводит карточки на страницу
+// Выводим карточки на страницу
 
 initialCards.forEach(function (itemCard) {
   const card = createCard(itemCard, deleteCard);
